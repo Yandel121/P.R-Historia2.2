@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/CSS_website.css">
+    <title>P.R Historia</title>
+    <link rel="icon" href="Images/Logo.png" type="image/x-icon"/>
+</head>
+<body>
+<header>
+    <h1>P.R Historia</h1>
+    <nav class="nav-items">
+        <a href="Homepage.html">Homepage</a>
+        <a href="ABOUT_US.html">About me</a>
+        <a href="Lectura.html">Lecture</a>
+        <a href="Contact_Us.html">Contact Us</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <!-- Slide Show -->
+        <div class="slideshow-container">
+            <img class="mySlides fade" src="Images/History.png" alt="History" style="width:100%">
+            <img class="mySlides fade" src="Images/Classroom.png" alt=Education style="width:100%">
+            <img class="mySlides fade" src="Images/Boardgames.png" alt="Games" style="width:100%">
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content-container">
+            <div class="column left-column"> 
+                <h2>Who are you?</h2>
+                <p>I am a developer who seeks to ease the transition between traditional learning methods to modernize ways while providing a platform both engaging and effective for teachers and students alike. I don't seek to disregard older methods but rather enhance their effectiveness, keeping in mind the current research regarding how humans behave and learn.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="column right-column"> 
+            <h2 id="section1">What is your method of education?</h2>
+            <h4>Our method of education is called A.C.E.S</h4>
+            <p>Aligning fun with education<br>Collaboration among peers<br>Entertainment through modern media<br>Singular-multiple style learning</p>
+        </div>
+    </section>
+    <section>
+        <div class="content-container">
+            <div class="column left-column"> 
+                <h2>What is this type of learning meant to promote?</h2>
+                <div class="list-container">
+                    <p>Group-focused learning</p>
+                    <p>Take into account the various learning styles.</p>
+                    <p>Modernize how we teach.</p>
+                    <p>Integrate several styles of learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 id="section2">Phase 1: Lecture</h2>
+        <p>Our website offers a collection of reputable, verified, and certified content to choose from. We always try to maintain at the top of the selection the most relevant and up-to-date content while keeping the dubious and more subjective topics at the bottom. This lets the reader find the content of their choice regardless of authenticity. If they decide to read outdated content, this will be highlighted/notified to the reader to avoid confusion and ultimately avoid misinformation.</p>
+    </section>
+    <section>
+        <div class="column left-column">
+            <h2 id="section3">Phase 2: Games</h2>
+            <p>Methodology of learning is meant to provide auditory and visual learning through engaging, entertaining content. Research has shown that when we gamify educational sources, students tend to have better retention and overall knowledge of the subject. Such a powerful tool will lead to further development in favor of the student.</p>
+        </div>
+    </section>
+    <section>
+        <h2 id="section4">Phase 3: Review</h2>
+        <p>This methodology of learning is focused on the content a child needs to reinforce. For example, if in the reading phase the student didn't show certain understanding over the topic, it will display various exercises to break down the content into a way the student may best understand the subject.</p>
+    </section>
+    <section>
+        <div class="column left-column">
+            <h2 id="section5">Phase 4: Quizzes</h2>
+            <p>The final phase is to prove the knowledge of the student over the material given to them. If the student is subjected to these methods and still struggles, they can revisit some of the other steps.</p>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div id="myPopup" class="popup">
+        <div class="container">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <p>&copy; 2024 Mi Biblioteca. Todos los derechos reservados.</p>
+</footer>
+<script>
+// JavaScript to show and hide the popup form
+document.getElementById('popup').addEventListener('click', function() {
+    document.getElementById('myPopup').style.display = 'block';
+});
+
+document.getElementById('closePopup').addEventListener('click', function() {
+    document.getElementById('myPopup').style.display = 'none';
+});
+
+// Automatic Slideshow - change image every 3 seconds
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+function currentSlide(n) {
+    showSpecificSlide(slideIndex = n);
+}
+
+function showSpecificSlide(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

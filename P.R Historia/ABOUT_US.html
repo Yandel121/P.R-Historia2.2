@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/CSS_website.css">
+    <link rel="icon" href="Images/Logo.png" type="image/x-icon"/>
+    <title>ABOUT US</title>
+</head>
+<body>
+<header>
+    <h1>P.R Historia</h1>
+    <nav class="nav-items">
+        <a href="Homepage.html">Homepage</a>
+        <a href="ABOUT_US.html">About Us</a>
+        <a href="Lectura.html">Lecture</a>
+        <a href="Contact_Us.html">Contact Us</a>
+    </nav>
+</header>
+<main>
+    <div class="about-us-container" style="padding: 10px; background-color: #f0f0f0;">
+        <h2 style="text-align: center;">ABOUT ME</h2>
+    </div>
+    <section>
+        <div class="about-us-container" style="padding: 10px; margin: 10px;">
+            <div class="polaroid">
+                <img src="Images/About_me_icon.jpg" alt="About Me Icon" style="width:100%;" class="res">
+            </div>
+            <div class="column">
+                <h3 style="text-align: center;">Yandel Colón Rivera</h3>
+                <p>Born in Fajardo, Puerto Rico, Yandel Colón currently studies in Interfajardo.
+                    He is an up and coming web developer that seeks for the improvement of educational resources. 
+                    Through the use of technology he hopes to create an easy transition of textbooks to technological sources.
+                    The lack of self-actualization of important information and administration of the government has led him to create 
+                    a space for historical events to shine. I have created multiple reliable resources to increase accessibility.</p>
+                <h3 style="text-align: center; margin: 10px;">Skills</h3>
+                <ul style="text-align: center;">
+                    <li>Proficiency in Front End languages such as HTML, CSS and Javascript.</li>
+                    <li>Bilingual (English and Spanish)</li>
+                    <li>Designing and prototyping visual frameworks through Figma.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content-container">
+            <div class="column left-column"> 
+                <div class="list-container">
+                    <h3 style="text-wrap: balance;">What is the objective of this project?</h3>
+                    <ul class="list">
+                        <li onclick="toggleDetails(this)">Education
+                            <p class="hidden">Promote and foment a strong cultural identity.
+                                Through the use of this channel we hope to create well-formed cultural identity
+                                by seeing the stages of its evolution.</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Interactivity
+                            <p class="hidden">Engaging way for students to learn, thus,</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Efficiency
+                            <p class="hidden">A manner in which teachers can educate history to the children faster.</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Accessibility
+                            <p class="hidden">Easy access of information for all ages. Knowledge is for all and should not be restricted
+                                regardless of the stage of life someone is in.</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Awareness
+                            <p class="hidden">Awareness and understanding behind our identities, creating a unified form of self.</p>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li onclick="toggleDetails(this)">Cultural Pride
+                            <p class="hidden">Showcase the range of expression of our culture to the younger generation. 
+                                Demonstrating the hardship, the struggle, the success and the love that goes through us all as a nation.</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Preservation
+                            <p class="hidden">To preserve the knowledge of our ancestors in the mind of the young. 
+                                To never forget who we are and what we represent, what we are and what will be.</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Truthfulness
+                            <p class="hidden">Demonstrate a source faithful to the truth. 
+                                No deviation from the truth, no need for lies, no need to hide what is ours to know.</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Acknowledge
+                            <p class="hidden">Bring to light those unrepresented by the media. By doing so we bring honor
+                                to those who paved the way for our people.</p>
+                        </li>
+                        <li onclick="toggleDetails(this)">Self-actualization
+                            <p class="hidden">A program that will actualize itself with the current understanding of our history.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="column right-column" style="text-align: center;"> 
+                <h3>What we hope to accomplish.</h3>
+                <p>Create a safe environment for learning</p>
+                <p>Receive widespread recognition in order to garner a following.</p>
+                <p>Receive follow-up on educational projects.</p>
+                <p>Counteract the lack of education/educational deficiencies in the country.</p>
+                <p>An effective management of the learning tools.</p>   
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <p>&copy; 2024 PR.Historia. Todos los derechos reservados.</p>
+</footer>
+<script src="JavaScript/Java_functions.java"></script>
+</body>
+</html>

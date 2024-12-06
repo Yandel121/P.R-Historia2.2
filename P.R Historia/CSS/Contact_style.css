@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+.contact
+{
+  position:relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction:column;
+  background:url(https://img.freepik.com/free-photo/flat-lay-chat-bubbles-with-telephone-receiver-copy-space_23-2148796079.jpg?t=st=1731469361~exp=1731472961~hmac=cd4c57f1a150a209baf7226c3d320c804eefac574b070826b144076ef0ed80cf&w=740);
+  background-size:cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align:center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 5000;
+    color:#fff;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color:#fff;
+}
+.container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction:column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight:500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize:none;
+}
+.contactForm .inputBox  span
+{
+    position: absolute;
+    left:0;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events:none;
+    transition:0.5s;
+    color:#666
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px; 
+}
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom:40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
+
+/* Top Navigation Bar */
+.nav {
+    background-color: #333;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  .nav-items a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  .contactForm button {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.contactForm button:hover {
+    background: #0199a3;
+}
